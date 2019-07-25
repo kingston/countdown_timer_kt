@@ -63,7 +63,11 @@ function CountdownTimer() {
           secondsRemaining={secondsRemaining}
           totalSeconds={totalSeconds}
         />
-        <CountdownStartPause isRunning={isRunning} onClick={onStartPause} />
+        <CountdownStartPause
+          disabled={secondsRemaining === 0 || totalSeconds === 0}
+          isRunning={isRunning}
+          onClick={onStartPause}
+        />
       </div>
       <SpeedInput speed={speed} onChange={onSpeedChange} />
     </div>
