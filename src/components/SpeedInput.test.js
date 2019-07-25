@@ -17,7 +17,7 @@ it('changes correct speed', () => {
 
   input
     .find('Button')
-    .at(2)
+    .filterWhere(b => b.text() === '2.0X')
     .simulate('click');
   expect(onChange.mock.calls.length).toBe(1);
   expect(onChange.mock.calls[0][0]).toBe(2);

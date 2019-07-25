@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import CountdownStartPause from './CountdownStartPause';
 import TimeInput from './TimeInput';
 import CountdownDisplay from './CountdownDisplay';
@@ -13,6 +13,17 @@ function CountdownTimer() {
   const [totalSeconds, setTotalSeconds] = useState(0);
   const [secondsRemaining, setSecondsRemaining] = useState(0);
   const [speed, setSpeed] = useState(1);
+
+  useEffect(() => {
+    if (isRunning) {
+      const interval = setInterval(() => {
+        setSecondsRemaining(s => s - 1);
+      }, 1000 / speed);
+      return () => clearInterval(interval);
+    }
+  }, [isRunning, speed]);
+
+  if (isRunning && secondsRemaining === 0) setIsRunning(false);
 
   const onInputMinutesChange = (e, value) => {
     setInputMinutes(value.value);
@@ -43,7 +54,10 @@ function CountdownTimer() {
         onChange={onInputMinutesChange}
         onStart={onStart}
       />
-      <CountdownStatus secondsRemaining={0} totalSeconds={totalSeconds} />
+      <CountdownStatus
+        secondsRemaining={secondsRemaining}
+        totalSeconds={totalSeconds}
+      />
       <div className="display-row">
         <CountdownDisplay
           secondsRemaining={secondsRemaining}
