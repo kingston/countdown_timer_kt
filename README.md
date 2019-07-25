@@ -2,12 +2,12 @@
 
 A frontend assignment for building a countdown timer SPA
 
-![Initial Screen](./screenshots/screen_0.jpg)
+![Initial Screen](https://raw.githubusercontent.com/kingston/countdown_timer_kt/master/screenshots/screen_0.png)
 
-![Starting Screen](./screenshots/screen_1.jpg)
+![Starting Screen](https://raw.githubusercontent.com/kingston/countdown_timer_kt/master/screenshots/screen_1.png)
 
-![Halfway Screen](./screenshots/screen_2.jpg)
+![Halfway Screen](https://raw.githubusercontent.com/kingston/countdown_timer_kt/master/screenshots/screen_2.png)
 
-![Near End Screen](./screenshots/screen_3.jpg)
+![Near End Screen](https://raw.githubusercontent.com/kingston/countdown_timer_kt/master/screenshots/screen_3.png)
 
-![End Screen](./screenshots/screen_4.jpg)
+![End Screen](https://raw.githubusercontent.com/kingston/countdown_timer_kt/master/screenshots/screen_4.png)
