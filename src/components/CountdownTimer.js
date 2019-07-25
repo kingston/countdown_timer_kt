@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import CountdownStartPause from './CountdownStartPause';
 import TimeInput from './TimeInput';
 import CountdownDisplay from './CountdownDisplay';
+import CountdownStatus from './CountdownStatus';
 import SpeedInput from './SpeedInput';
 
 import './CountdownTimer.css';
@@ -42,6 +43,7 @@ function CountdownTimer() {
         onChange={onInputMinutesChange}
         onStart={onStart}
       />
+      <CountdownStatus secondsRemaining={0} totalSeconds={totalSeconds} />
       <div className="display-row">
         <CountdownDisplay
           secondsRemaining={secondsRemaining}

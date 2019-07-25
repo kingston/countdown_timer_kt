@@ -8,8 +8,16 @@ function CountdownDisplay({ secondsRemaining, totalSeconds }) {
     .toString()
     .padStart(2, '0');
   const seconds = (secondsRemaining % 60).toString().padStart(2, '0');
+
+  const classNames = ['countdown-display'];
+
+  if (secondsRemaining > 0) {
+    if (secondsRemaining < 20) classNames.push('near-end');
+    if (secondsRemaining < 10) classNames.push('imminent-end');
+  }
+
   return (
-    <div className="countdown-display">
+    <div className={classNames.join(' ')}>
       {minutes}:{seconds}
     </div>
   );

@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders half way state 1`] = `
+<div
+  className="countdown-status"
+>
+  More than halfway there!
+</div>
+`;
+
+exports[`renders initial state 1`] = `
+<div
+  className="countdown-status"
+/>
+`;
+
+exports[`renders times up state 1`] = `
+<div
+  className="countdown-status"
+>
+  Time's up!
+</div>
+`;

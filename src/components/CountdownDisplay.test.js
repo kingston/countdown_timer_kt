@@ -8,3 +8,24 @@ it('renders initial state', () => {
   );
   expect(initialState).toMatchSnapshot();
 });
+
+it('renders normal state', () => {
+  const initialState = shallow(
+    <CountdownDisplay secondsRemaining={25} totalSeconds={30} />
+  );
+  expect(initialState).toMatchSnapshot();
+});
+
+it('renders near end state', () => {
+  const initialState = shallow(
+    <CountdownDisplay secondsRemaining={15} totalSeconds={30} />
+  );
+  expect(initialState).toMatchSnapshot();
+});
+
+it('renders imminent end state', () => {
+  const initialState = shallow(
+    <CountdownDisplay secondsRemaining={5} totalSeconds={30} />
+  );
+  expect(initialState).toMatchSnapshot();
+});

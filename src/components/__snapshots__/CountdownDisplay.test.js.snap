@@ -1,5 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`renders imminent end state 1`] = `
+<div
+  className="countdown-display near-end imminent-end"
+>
+  00
+  :
+  05
+</div>
+`;
+
 exports[`renders initial state 1`] = `
 <div
   className="countdown-display"
@@ -7,5 +17,25 @@ exports[`renders initial state 1`] = `
   00
   :
   00
+</div>
+`;
+
+exports[`renders near end state 1`] = `
+<div
+  className="countdown-display near-end"
+>
+  00
+  :
+  15
+</div>
+`;
+
+exports[`renders normal state 1`] = `
+<div
+  className="countdown-display"
+>
+  00
+  :
+  25
 </div>
 `;
