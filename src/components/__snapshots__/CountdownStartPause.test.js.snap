@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`shows a different icon for running and not running 1`] = `
+<Button
+  as="button"
+  icon={true}
+>
+  <Icon
+    as="i"
+    name="play"
+  />
+</Button>
+`;
+
+exports[`shows a different icon for running and not running 2`] = `
+<Button
+  as="button"
+  icon={true}
+>
+  <Icon
+    as="i"
+    name="pause"
+  />
+</Button>
+`;

@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`activates button based on speed 1`] = `
+<ButtonGroup>
+  <Button
+    active={false}
+    as="button"
+    key="1"
+    onClick={[Function]}
+  >
+    1.0
+    X
+  </Button>
+  <Button
+    active={false}
+    as="button"
+    key="1.5"
+    onClick={[Function]}
+  >
+    1.5
+    X
+  </Button>
+  <Button
+    active={true}
+    as="button"
+    key="2"
+    onClick={[Function]}
+  >
+    2.0
+    X
+  </Button>
+</ButtonGroup>
+`;
