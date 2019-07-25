@@ -4,11 +4,13 @@ import TimeInput from './TimeInput';
 import CountdownDisplay from './CountdownDisplay';
 import SpeedInput from './SpeedInput';
 
+import './CountdownTimer.css';
+
 function CountdownTimer() {
   return (
-    <div>
+    <div className="countdown-timer">
       <TimeInput />
-      <div>
+      <div className="display-row">
         <CountdownDisplay />
         <CountdownStartPause />
       </div>
